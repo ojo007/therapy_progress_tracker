@@ -44,6 +44,14 @@ Install dependencies:
    
      pip install -r requirements.txt
 
+Download NLP models:
+
+   The models are downloaded automatically on first use, but ensure your system has access to Hugging Face's model repository. This might take a few moments on the first run due to downloading:
+
+    distilbert-base-uncased-finetuned-sst-2-english for sentiment analysis
+    
+    all-MiniLM-L6-v2 for semantic similarity
+
 Run the backend server:
    
       uvicorn app:app –reload
